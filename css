@@ -1,0 +1,145 @@
+@import url('https://cdn.fontiran.com/css?family=Vazirmatn:wght@400;700&display=swap');
+
+body {
+  margin: 0; padding: 0;
+  background: linear-gradient(135deg, #191919 70%, #192046 100%);
+  font-family: 'Vazirmatn', 'IranYekan', Tahoma, sans-serif;
+  color: #fff;
+  direction: rtl;
+  overflow-x: hidden;
+}
+
+h1, h2 { font-weight: 700; margin: 0 0 1rem 0; }
+h2 { color: #ffcb3a; letter-spacing: 1px; }
+a { color: #58a7ff; text-decoration: none; transition: color .2s;}
+a:hover { color: #ffd700; }
+.logo { font-size: 1.3rem; font-weight: bold; color: #ffcb3a; letter-spacing: 2px; }
+
+.header {
+  display: flex; justify-content: space-between; align-items: center;
+  background: rgba(25,25,25,0.80);
+  backdrop-filter: blur(7px);
+  padding: 1.1rem 5vw 1.1rem 5vw;
+  box-shadow: 0 1px 24px 0 #090a1a40;
+  border-bottom: 1px solid #312f3c60;
+  position: sticky; top: 0; z-index: 100;
+}
+.nav a {margin: 0 1.3rem; font-weight: 500;}
+.cta-btn, .btn {
+  padding: 0.7rem 2.2rem;
+  border-radius: 3rem;
+  font-size: 1rem;
+  font-weight: 700;
+  background: linear-gradient(95deg,#ffd700 30%,#58a7ff 100%);
+  border: none;color: #2d271c;
+  margin-right: 1.2rem;
+  cursor:pointer;
+  transition: box-shadow .2s;
+  box-shadow: 0 0 12px 0 #ffd70034;
+}
+.btn.glass {
+  background: rgba(24,30,50,0.42);
+  color: #ffd700;
+  border: 1px solid #ffd70055;
+  backdrop-filter: blur(16px);
+}
+
+.hero {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
+  background: rgba(19,19,28,0.98);
+  min-height: 66vh;
+  padding: 4rem 7vw 0 7vw;
+  gap: 3rem;
+}
+.hero-img-glass {
+  background: rgba(31,31,44,0.52); border-radius: 2rem; overflow: hidden;
+  box-shadow: 0 12px 64px 0 #090a1a5d, 0 0 0 12px #222a3340 inset;
+  backdrop-filter: blur(10px);
+  width: 320px; height: 320px; display:flex;align-items:center;justify-content:center;
+}
+.hero-img-glass img {width: 88%; height: auto;}
+.hero-content {
+  max-width: 480px;
+  padding: 2rem 0;
+}
+.hero .title { font-size: 2.1rem; color: #fff; line-height: 1.6; }
+.hero .desc { font-size: 1.25rem;color: #c3c3bb;margin: 1.6rem 0;}
+.hero-cta .btn {margin: 0 1rem 0 0;}
+
+.students-gallery, .instructors, .brands, .vip-dashboard,
+.testimonials, .faq, .register-section {
+  margin: 0 auto 4rem auto; padding: 2.5rem 7vw 2.5rem 7vw; max-width: 1240px;
+}
+.students-gallery .gallery-grid {
+  display: flex; gap: 2rem; flex-wrap: wrap;
+}
+.gallery-card {
+  flex-basis: 220px; border-radius: 1.4rem;
+  overflow: hidden; padding: 1rem;
+  backdrop-filter: blur(16px);
+  background: rgba(32,32,48,0.52);
+  box-shadow: 0 8px 24px #2e27596a;
+}
+.gallery-card img { width: 100%; border-radius: 1rem 1rem 0 0;}
+.caption {color: #ffd700; font-size: 0.97rem;margin-top:0.5rem;}
+
+.inst-cards {display: flex;gap: 2rem;}
+.inst-card {
+  display: flex; flex-direction: column; align-items: center;
+  border-radius: 1.4rem; padding: 1.2rem 1.3rem;
+  width: 200px; background: rgba(24,19,72,0.26);
+  box-shadow: 0 2px 16px #23294a70;
+}
+.inst-card img {width: 78px; height: 78px; border-radius: 50%; margin-bottom: 1rem; border:3px solid #ffcb3a55;}
+
+.brand-logos {display: flex;gap: 2rem;align-items:center;}
+.brand-logos img {height: 52px;filter: drop-shadow(0 2px 10px #ffd70030);}
+.vip-dashboard .dashboard-preview {
+  display: flex;gap: 2rem;align-items:flex-start;
+  padding: 2rem;border-radius:1.5rem;min-height:180px;
+  background: rgba(41,33,33,0.42); box-shadow: 0 12px 36px 0 #222a3250;
+}
+.dashboard-preview ul {list-style: none; padding: 0;}
+.dashboard-preview li {margin-bottom: 0.6rem;font-size: 1.07rem;}
+.dashboard-preview span {color: #ffd700;}
+
+.register-section .register-form {
+  display: flex;flex-direction: column;gap: 1.3rem;
+  padding: 2.1rem 2rem; border-radius:1.3rem;
+  background: rgba(32,44,70,0.32); box-shadow:0 5px 28px #1c1a3736;
+  max-width: 370px;margin: 0 auto;
+}
+.register-form input, .register-form select {
+  padding: 0.9rem 1.4rem; border: none;border-radius: 7px;
+  font-family: inherit; font-size: 1.05rem;
+  background: rgba(32,31,48,0.62); color: #fff;outline: none;
+  box-shadow: 0 2px 10px #ffd70015;border-bottom: 2px solid #1d5ab320;
+}
+.register-form input:focus { border-bottom: 2.7px solid #ffd700dd;}
+.btn.gold {background: linear-gradient(89deg,#ffd700 50%,#58a7ff 100%);color:#2c2100;}
+
+.testimonials .testimonial-cards {
+  display: flex; gap: 2rem; flex-wrap: wrap; align-items: flex-start;
+}
+.testimonial-card { min-width: 180px;max-width:260px; border-radius: 1rem;font-size:1.1rem;padding: 1.2rem 1.2rem;box-shadow:0 4px 24px #5ab4fa24;}
+.testimonial-card video {width: 100%;border-radius: 0.7rem; margin-bottom: 0.5rem;}
+.faq details {background:rgba(31,32,56,0.42);margin-bottom:1.2rem;padding:1rem;border-radius:1rem;box-shadow:0 2px 16px #ffd70014;}
+.faq summary {color:#ffd700;font-size:1.07rem;cursor:pointer;font-weight:600;}
+
+footer {
+  background: #0e101a;
+  padding: 2.5rem 7vw;
+  color: #fffbe6;
+  border-radius: 1.5rem 1.5rem 0 0;
+  box-shadow: 0 -2px 16px #58a7ff30;
+  text-align: center;
+}
+footer .logo {margin-bottom: 1.2rem; font-size: 1.2rem;}
+.footer-content {
+  display: flex; flex-direction: column; gap: 1.1rem; align-items: center;
+}
+.footer-content img {height: 36px; margin: 0 1rem;}
+@media (max-width:900px) {
+  .hero, .students-gallery .gallery-grid, .inst-cards, .testimonials .testimonial-cards, .brand-logos, .vip-dashboard .dashboard-preview {flex-direction: column;align-items:center;}
+  .header, .students-gallery, .instructors, .brands, .vip-dashboard, .register-section, .testimonials, .faq, footer {padding:2.5vw;}
+}
